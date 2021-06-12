@@ -4,7 +4,7 @@
 
 mkdir -p /tmp/years-checked
 
-for YEAR in $(seq 90 95); do
+for YEAR in $(seq 93 98); do
   if [ -f /tmp/years-checked/$YEAR ]; then
     echo "Already checked the year $YEAR"
   else
