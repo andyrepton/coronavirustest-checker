@@ -21,6 +21,9 @@ for YEAR in $(seq 65 99); do
         echo "${MESSAGE}"
       fi
       touch /tmp/years-checked/${YEAR}
+    else
+      echo "There won't be any more years available after this, so we can exit"
+      exit
     fi
   fi
   # Let's sleep for 3 seconds anyway just to give the poor API some love
